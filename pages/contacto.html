@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Fmed-UBA</title>
 </head>
@@ -25,61 +27,61 @@
         <section>
             <h1>¡Complete la planilla con sus datos y transmitanos su mensaje!</h1>
             <div class="encuesta-e-imagen">
-                <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, commodi assumenda non nobis saepe odit accusamus vero earum voluptatem laboriosam! </p>
-                <form action="">
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre">
+                <p class="p1">Trabajemos Juntos! Queremos formar parte de su proceso educativo. Dejenos su mensaje y nos contactaremos a la brevedad.    🙌🙌</p>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Nombre</label>
+                        <input type="Nombre" class="form-control" id="inputEmail4">
                     </div>
-                    <div>
-                        <label for="apellido">apellido:</label>
-                        <input type="text" name="apellido">
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Apellido</label>
+                        <input type="Apellido" class="form-control" id="inputPassword4">
                     </div>
-                    <div>
-                        <label for="edad">Edad:</label>
-                        <input type="text" name="edad">
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Email</label>
+                        <input type="Email" class="form-control" id="inputAddress2"
+                            placeholder="XXXX@gmail.com">
                     </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email">
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="San Justo 1200">
                     </div>
-                    <div>
-                        <label for="contrasena">Contraseña:</label>
-                        <input type="password" name="contrasena">
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="inputCity">
                     </div>
-                    <div>
-                        <label for="Masculino">Masculino</label>
-                        <input type="radio" name="masculino">
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">Sexo</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Masculino</option>
+                            <option>Femenino</option>
+                            <option>Otro...</option>
+                        </select>
                     </div>
-                    <div>
-                        <label for="femenino">Femenino</label>
-                        <input type="radio" name="femenino">
-                    </div>
-                    <div>
-                        <label for="otro">Otro</label>
-                        <input type="radio" name="otro">
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Edad</label>
+                        <input type="text" class="form-control" id="inputAge">
                     </div>
                     <div>
                         <p>Su opinion nos interesa.</p>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea name="" id="" cols="30" rows="6" placeholder="Mensaje"></textarea>
                     </div>
-                    <div>
-                        <input type="submit">
-                        <input type="reset">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-secondary">Enviar</button>
                     </div>
                 </form>
                 <div class="imagen-contacto">
-                <img src="../img/doctor-en-medicina.png" alt="">
+                    <img src="../img/doctor-en-medicina.png" alt="">
                 </div>
             </div>
         </section>
         <section>
             <div class="iframe-p">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quas.</p>
+                <p> La Facultad de medicina se encuentra ubicada sobre Paraguay 2155, C1121 ABG, Buenos Aires</p>
                 <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2414319739632!2d-58.40044298547653!3d-34.598055980460884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca943b03c3d7%3A0x4aaa7acded4ae7d3!2sFacultad%20de%20Medicina%20de%20la%20Universidad%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1656470885810!5m2!1ses!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2414319739632!2d-58.40044298547653!3d-34.598055980460884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca943b03c3d7%3A0x4aaa7acded4ae7d3!2sFacultad%20de%20Medicina%20de%20la%20Universidad%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1656470885810!5m2!1ses!2sar"
+                    width="700" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
