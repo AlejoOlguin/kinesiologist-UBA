@@ -47,7 +47,7 @@ header nav ul li a{
 
 
 
-/*-----------index----------*/
+/*-----------index-header---------*/
 
 
 
@@ -241,7 +241,9 @@ header nav ul li a{
     height: 50px;
 }
 
-
+.carousel-inner{
+    padding-bottom: 10px;
+}
 
 
 /*-----------page materias---------*/
@@ -535,7 +537,7 @@ header nav ul li a{
     text-align: center;
     padding-left: 80px;
 }
-.fondo-contacto section .iframe-p iframe{
+section .iframe-p iframe{
     padding: 100px 200px 100px 150px;
 }
 
@@ -579,9 +581,10 @@ footer .letra{
 
 
 @media screen and (max-width:865px){
-    .index-header{
+    .index-header {
         flex-direction: column;
         padding: 0px;
+        position: relative;
     }
 }
 
@@ -755,19 +758,96 @@ footer .letra{
 /*page--contacto--main*/
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 930px){
     .imagen-contacto img{
         display: none;
     }
+    .iframe-p p{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .encuesta-e-imagen .p1{
+        font-size: 30px;
+        font-weight: 500;
+    }
 }
 
-@media screen and (max-width: 905px){         /*!hacerlo de 0, que esta rompiendo?*/
-    .encuesta-e-imagen {
-        padding: 0px;
+@media screen and (max-width: 873px){
+    .encuesta-e-imagen{
+        flex-direction: column;
+        padding-bottom: 80px;
+    }
+    .encuesta-e-imagen .p1{
+        padding-top: 0px;
+    }
+    .encuesta-e-imagen form{
+        padding-right: 80px
+    }
+    .iframe-p{
+        flex-direction: column;
+    }
+    .iframe-p p{
+        padding-right: 80px;
+    }
+    section .iframe-p iframe{
+        padding: 50px 150px 100px 150px;
+        justify-content: center;
     }
 }
-@media screen and (max-width: 905px){
-    .iframe-p{
-        padding: 0px;
+
+@media screen and (max-width: 755px){
+    section .iframe-p iframe{
+        width: 550px;
+        height: 460px;
     }
-}    
+}
+
+@media screen and (max-width: 615px){
+    .iframe-p p{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .encuesta-e-imagen .p1{
+        font-size: 15px;
+        font-weight: 400;
+        padding-left: 110px;
+    }
+    section .iframe-p iframe{
+        width: 450px;
+        height: 350px;
+        padding: 0px;
+        padding-left: 130px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    section .iframe-p iframe{
+        width: 450px;
+        height: 350px;
+        padding: 0px;
+        padding-left: 80px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    section .iframe-p iframe{
+        width: 350px;
+        height: 200px;
+        padding: 0px;
+        padding-left: 10px;
+        padding-bottom: 30px;
+    }
+}
+
+/*@media screen and (max-width: 873px){
+    .iframe-p p{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .encuesta-e-imagen .p1{
+        font-size: 20px;
+        font-weight: 400;
+    }
+}*/
