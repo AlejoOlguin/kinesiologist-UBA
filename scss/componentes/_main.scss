@@ -1,0 +1,464 @@
+
+
+
+
+
+/* --------------imdex-----------*/
+
+
+
+
+
+
+
+.index-main{
+    .fondo{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.267), rgba(240, 226, 226, 0.712)) /* opaca la imagen de fondo para que las letras se vean mejor*/, url("../img/foto-guantes1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  /*entre estos 3 queda todo centrado*/
+        text-align: center;
+        h2{
+            padding: 50px;
+            font-size: 60px;
+            font-weight: 30px;
+            letter-spacing: 5px;
+            border: 2px black solid;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            &:hover{
+                letter-spacing: 15px;
+                transition-duration: 2s;
+                transition-timing-function: ease-out;
+            }
+        }
+    }
+    section{
+        h1{
+            color: black;/*color de letra*/
+            font-size: 35px;/*tamaño de letra*/
+            font-weight: 300;/*grosor*/
+            font-style: italic;/* tipo de letra*/
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*tipografias distintas*/
+            letter-spacing: 5px;/* espacio entre letras*/
+            line-height: 150px;/* separa las lineas entre si-interlineado-*/
+            /*text-align: center;/* posicion del: */
+        }
+    }
+    .decano{
+        div{
+            background:linear-gradient(white, white, rgba(1, 252, 252, 0.644), rgba(0, 224, 224, 0.644), darkcyan);/*--gradiente--linealmente--*/
+            /*bacground:redial-gradient() se va disfuminando el color desde el centro a los costados*/
+            /*transition-property: ej:width;/*--especifica la propiedad que s eva a aplicar--*/
+            /*transition-duration: 2s;/*--cuanto va a demorar la ejecucuin del cambio--*/
+            /*transition-timing-funtion: ej:ease-in/* arranca lento y acelera;/*--tiempo de aceleracion de la transcicion--*/
+            /*transition-delay: 1s;/* teimpo de esperaa para que se ejecute*/
+        }
+        .grid-conteiner{
+            padding-left: 30px;
+            display: grid; 
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 200px 200px 200px; 
+            gap: 15px 45px;
+            grid-template-areas: 
+            "titulo-grid titulo-grid publicidad"
+            "articulo-1 articulo-2 publicidad"
+            "articulo-3 articulo-4 publicidad"
+            "articulo-5 articulo-5 publicidad"
+            ;
+            .titulo-grid{
+                grid-area: titulo-grid;
+                display: flex;
+                justify-content: center;
+                padding-top: 90px;
+            }
+            .articulo-1{
+                grid-area: articulo-1;
+                justify-items: center;
+                align-items: center;
+                text-align: center;
+            }
+            .articulo-2{
+                grid-area: articulo-2;
+                justify-items: center;
+                align-items: center;
+                text-align: center;
+            }
+            .articulo-3{
+                grid-area: articulo-3;
+                justify-items: center;
+                align-items: center;
+                text-align: center;
+            }
+            .articulo-4{
+                grid-area: articulo-4;
+                justify-items: center;
+                align-items: center;
+                text-align: center;
+            }
+            .articulo-5{
+                grid-area: articulo-5;
+                justify-items: center;
+                align-items: center;
+                text-align: center;
+                padding-bottom: 40px;
+            }
+            .publicidad{
+                grid-area: publicidad;
+                border: 3px solid black;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                background-color: blue;
+                div{
+                    background: white;
+                    h3{
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 70px;
+                        padding-bottom: 30px;
+                        background-color: blue;
+                        color: white;
+                    }
+                    .icon-conteiner{
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 30px;
+                        div{
+                            p{
+                                font-size: 12PX;
+                                padding-top: 0px;
+                                padding-bottom: 40px;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .proteccion{
+                        display: flex;
+                        flex-direction: column;
+                        font-family: 'Saira', sans-serif;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        padding-bottom: 20px;
+                        img{
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                    .carousel-inner{
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*--------PAGE--MATERIAS-----*/
+
+
+
+
+
+main{
+    .titulos-materias{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 30px;
+    }
+    section{
+        .materias{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            div{
+                width: 300px;
+                height: 470px;
+                border: 1px solid brown;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                text-align: center;
+                border-radius: 10px; /*redondear las puntas*/
+                background-color: beige;
+                box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
+                &:hover{
+                    transform: scale(1.1);
+                    transition-duration: 2s;
+                }
+                h3{
+                    font-size: 20px;
+                }
+                p{
+                    margin-bottom: 25px;
+                    font-style: italic;
+                }
+                button{
+                    text-decoration: none;
+                    color: beige;
+                    background-color: brown;
+                    padding: 5px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    &:active{
+                        position: relative;
+                        top: 1px;
+                    }
+                }
+                img{
+                    width: 220px;
+                    height: 220px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*----------PAGE--REQUISITOS------------*/
+
+
+
+.requisitos-main{
+    section{
+        h1{
+            padding-top: 40px;
+            padding-bottom: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            text-align: center;
+        }
+        div{
+            line-height: 30px;
+            font-size: 17px;
+            padding-left: 30px;
+            .h31{
+                padding-left: 0px
+            }
+        }
+        .documentacion{
+            h3{
+                font-size: 22px;
+                padding-top: 40px;
+                padding-bottom: 15px;
+                padding-left: 250px;
+            }
+            ol{
+                padding-left: 320px;
+            }
+        }
+    }
+    section{
+        .ingresantes{
+            padding-top: 40px;
+            padding-bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;  
+            text-align: center;
+            p{
+                margin-top: 42px;
+            }
+        }
+    }
+    section{
+        .link-inscripcion{
+            padding-bottom: 50px;
+            h4{
+                padding-bottom: 10px;
+                padding-left: 35px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                background-color: black;
+                border-radius: 5px;
+                padding: 5px;
+                margin-left: 150px;
+                &:hover{
+                    background-color: white;
+                    color: black;
+                    border: black 2px solid;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*---------PAGE--ACERCA--DE--NOSOTROS---------*/
+
+
+
+.acerca-de-nosotros-main{
+    section{
+        h1{
+            padding-top: 40px;
+            padding-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            text-align: center;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            text-align: center;
+            padding-bottom: 0px;
+            line-height: 30px;
+            font-size: 17px;
+        }
+    }
+    .galeria-historia{
+        padding-left: 5px;
+        padding-bottom: 40px;
+        display: grid; 
+        grid-template-columns: repeat(5,1fr);
+        gap: 40px;
+        grid-template-areas:
+        "galeria galeria galeria historia historia"
+        ;
+        .historia{
+            grid-area: historia;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;  
+            text-align: center;
+            h3{
+                font-size: 23px;
+            }
+        }
+        .galeria{
+            grid-area: galeria;
+            width: 100%;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 250px;
+            gap: 15px;
+            grid-template-areas: 
+            "img6 img6 img2"
+            "img4 img1 img2"
+            "img5 img5 img3"
+            ;
+            .img1{
+                grid-area: img1;
+            }
+            .img2{
+                grid-area: img2;
+            }
+            .img3{
+                grid-area: img3;
+            }
+            .img4{
+                grid-area: img4;
+            }
+            .img5{
+                grid-area: img5;
+            }
+            .img6{
+                grid-area: img6;
+            }
+            .grid-items{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    box-shadow: 10px 10px 15px -2px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 10px 10px 15px -2px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 10px 10px 15px -2px rgba(0,0,0,0.75);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*--------CONTACTO--------*/
+
+
+
+
+.fondo-contacto{
+    background-image: url("../img/banner.jpg");
+    background-position: center;/*para que la posicione en el centro*/
+    background-size: cover;/*para que cuber la pantalla*/
+    background-repeat: no-repeat;/*para que no se repita en forma de mozaico*/
+    background-attachment: fixed;/* para que siga la foto con la bajada de pantalla*/
+    section{
+        h1{
+            padding-top: 40px;
+            padding-bottom: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            text-align: center;
+        }
+        .encuesta-e-imagen{
+            padding-left: 80px;
+            display: flex;
+            font-size: 20px;
+            flex-direction: row-reverse;
+            .p1{
+                font-size: 40px;
+                font-weight: 600;
+                font-family: 'Saira', sans-serif;
+                justify-content: center;
+                align-items: center;  
+                text-align: center;
+                padding-top: 140px;
+                padding-left: 100px;
+                padding-right: 200px;
+            }
+            .imagen-contacto{
+                img{
+                    position: fixed;
+                    right: 50px;
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+        .iframe-p{
+            display: flex;
+            p{
+                display: flex;
+                font-size: 40px;
+                font-weight: 600;
+                font-family: 'Saira', sans-serif;
+                justify-content: center;
+                align-items: center;  
+                text-align: center;
+                padding-left: 80px;
+            }
+            iframe{
+                padding: 100px 200px 100px 150px;
+            }
+        }
+    }
+}

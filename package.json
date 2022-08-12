@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-coder-alejo-olguin",
+  "version": "1.0.0",
+  "description": "<h3 align=\"center\">esta pagina te da informacion y te invita a unirte a la licenciatura en kinesiología y fisiatría que se dicta en la Facutad de Medicina en la Universidad de Buenos Aires</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1" ,
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejoOlguin/kinesiologist-UBA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlejoOlguin/kinesiologist-UBA/issues"
+  },
+  "homepage": "https://github.com/AlejoOlguin/kinesiologist-UBA#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

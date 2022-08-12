@@ -1,0 +1,36 @@
+header{
+    background-color: rgba(0, 0, 0, 0.603);
+    padding: 20px;
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    nav ul{
+        display: flex;
+        li{
+            /*display: inline-block; /*para que deje de ser en bloque y pase a ser en linea__lo deje de usar porflex-box*/
+            /*list-style: none;/*saca el punto de adelante de lads lineas*/
+            margin: 20px;
+            display: flex;
+            a{
+                text-decoration: none;/*sin subrayar las palabras*/
+                color: white;
+            }
+        }
+    }
+}
+.index-header{
+    /*background-color: rgba(137, 43, 226, 0.068);*/
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+    position: sticky;/*por si bajo, que el header baje conmigo*/
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: 55px;
+        height: 55px;
+    }
+}
