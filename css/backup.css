@@ -1,23 +1,20 @@
+/*
+
 img{
     width: 100px;
     height: 100px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');/*footer*/ 
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto+Slab:wght@100&display=swap');/*nav*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto+Slab:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto+Slab:wght@100&family=Saira:wght@100&display=swap');
 
-*{
-    margin: 0%;/* determina la separacion entre elementos-para el margen*/
-    padding: 0%; /*espacio entre elementos y bordecitos*/
-    box-sizing: border-box;
-}
 
 
 
 /*------------HEADER-------------*/
 
 
-
+/*
 
 
 
@@ -34,30 +31,27 @@ header nav ul{
     display: flex;
 }
 header nav ul li{
-    /*display: inline-block; /*para que deje de ser en bloque y pase a ser en linea__lo deje de usar porflex-box*/
-    /*list-style: none;/*saca el punto de adelante de lads lineas*/
     margin: 20px;
     display: flex;
 }
 header nav ul li a{
-    text-decoration: none;/*sin subrayar las palabras*/
+    text-decoration: none;
     color: white;
 }
 
 
-
+*/
 
 /*-----------index-header---------*/
 
-
+/*
 
 
 
 .index-header{
-    /*background-color: rgba(137, 43, 226, 0.068);*/
     background-color: rgba(0, 0, 0, 0.603);
     color: white;
-    position: sticky;/*por si bajo, que el header baje conmigo*/
+    position: sticky;
     top: 0px;
     display: flex;
     justify-content: space-between;
@@ -69,7 +63,7 @@ header nav ul li a{
 }
 
 
-
+*/
 
 
 
@@ -85,11 +79,11 @@ header nav ul li a{
 /*----------index--------*/
 
 
-
+/*
 
 
 .index-main .fondo{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.267), rgba(240, 226, 226, 0.712)) /* opaca la imagen de fondo para que las letras se vean mejor*/, url("../img/foto-guantes1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.267), rgba(240, 226, 226, 0.712)), url("../img/foto-guantes1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -99,18 +93,17 @@ header nav ul li a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  /*entre estos 3 queda todo centrado*/
+    align-items: center;  
     text-align: center;
 }
 .index-main section h1{
-    color: black;/*color de letra*/
-    font-size: 35px;/*tamaño de letra*/
-    font-weight: 300;/*grosor*/
-    font-style: italic;/* tipo de letra*/
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*tipografias distintas*/
-    letter-spacing: 5px;/* espacio entre letras*/
-    line-height: 150px;/* separa las lineas entre si-interlineado-*/
-    /*text-align: center;/* posicion del: */
+    color: black;
+    font-size: 35px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
+    line-height: 150px;
 }
 .fondo h2{
     padding: 50px;
@@ -132,12 +125,7 @@ header nav ul li a{
     font-size: 18px;
 }
 .decano div{
-    background:linear-gradient(white, white, rgba(1, 252, 252, 0.644), rgba(0, 224, 224, 0.644), darkcyan);/*--gradiente--linealmente--*/
-    /*bacground:redial-gradient() se va disfuminando el color desde el centro a los costados*/
-    /*transition-property: ej:width;/*--especifica la propiedad que s eva a aplicar--*/
-    /*transition-duration: 2s;/*--cuanto va a demorar la ejecucuin del cambio--*/
-    /*transition-timing-funtion: ej:ease-in/* arranca lento y acelera;/*--tiempo de aceleracion de la transcicion--*/
-    /*transition-delay: 1s;/* teimpo de esperaa para que se ejecute*/
+    background:linear-gradient(white, white, rgba(1, 252, 252, 0.644), rgba(0, 224, 224, 0.644), darkcyan);
 }
 .decano .grid-conteiner{
     padding-left: 30px;
@@ -245,10 +233,12 @@ header nav ul li a{
 }
 
 
+*/
+
 /*-----------page materias---------*/
 
 
-
+/*
 
 
 
@@ -273,7 +263,7 @@ header nav ul li a{
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
-    border-radius: 10px; /*redondear las puntas*/
+    border-radius: 10px; 
     background-color: beige;
     box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
@@ -309,13 +299,13 @@ header nav ul li a{
     height: 220px;
 }
 
-
+*/
 
 
 /*----------requisitos---------*/
 
 
-
+/*
 
 
 
@@ -378,13 +368,13 @@ header nav ul li a{
 }
 
 
-
+*/
 
 
 /*---------page acerca de nosotros------------*/
 
 
-
+/*
 
 
 
@@ -473,20 +463,21 @@ header nav ul li a{
     font-size: 23px;
 }
 
+*/
 
 /*---------page contacto--------*/
 
 
-
+/*
 
 
 
 .fondo-contacto{
     background-image: url("../img/banner.jpg");
-    background-position: center;/*para que la posicione en el centro*/
-    background-size: cover;/*para que cuber la pantalla*/
-    background-repeat: no-repeat;/*para que no se repita en forma de mozaico*/
-    background-attachment: fixed;/* para que siga la foto con la bajada de pantalla*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .fondo-contacto section h1{
     padding-top: 40px;
@@ -537,7 +528,7 @@ section .iframe-p iframe{
 }
 
 
-
+*/
 
 
 
@@ -547,7 +538,7 @@ section .iframe-p iframe{
 
 
 
-
+/*
 
 
 
@@ -564,7 +555,7 @@ footer .letra{
 
 
 
-
+*/
 
 
 /*----------------MEDIA QUERIES-----------------*/
@@ -836,13 +827,3 @@ footer .letra{
     }
 }
 
-/*@media screen and (max-width: 873px){
-    .iframe-p p{
-        font-size: 20px;
-        font-weight: 400;
-    }
-    .encuesta-e-imagen .p1{
-        font-size: 20px;
-        font-weight: 400;
-    }
-}*/
