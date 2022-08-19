@@ -145,7 +145,7 @@ header {
     border-top-right-radius: 5px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: blue; }
+    background-color: gray; }
     .index-main .decano .grid-conteiner .publicidad div {
       background: white; }
       .index-main .decano .grid-conteiner .publicidad div h3 {
@@ -153,7 +153,7 @@ header {
         justify-content: center;
         padding-top: 70px;
         padding-bottom: 30px;
-        background-color: blue;
+        background-color: gray;
         color: white; }
       .index-main .decano .grid-conteiner .publicidad div .icon-conteiner {
         display: flex;
@@ -179,6 +179,19 @@ header {
           height: 50px; }
       .index-main .decano .grid-conteiner .publicidad div .carousel-inner {
         padding-bottom: 10px; }
+
+.index-main .index-requisitos {
+  background-color: darkcyan;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding-left: 0px; }
+  .index-main .index-requisitos p {
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 30px; }
+  .index-main .index-requisitos a {
+    color: white; }
 
 /*--------PAGE--MATERIAS-----*/
 main .titulos-materias {
@@ -242,8 +255,9 @@ main section .materias {
   line-height: 30px;
   font-size: 17px;
   padding-left: 30px; }
-  .requisitos-main section div .h31 {
-    padding-left: 0px; }
+  .requisitos-main section div h2 {
+    padding-left: 0px;
+    font-size: 25px; }
 
 .requisitos-main section .documentacion h3 {
   font-size: 22px;
@@ -262,21 +276,27 @@ main section .materias {
   justify-content: center;
   align-items: center;
   text-align: center; }
+  .requisitos-main section .ingresantes h3 {
+    font-size: 30px; }
   .requisitos-main section .ingresantes p {
     margin-top: 42px; }
+
+.requisitos-main section .video h4 {
+  font-size: 18px; }
 
 .requisitos-main section .link-inscripcion {
   padding-bottom: 50px; }
   .requisitos-main section .link-inscripcion h4 {
     padding-bottom: 10px;
-    padding-left: 35px; }
+    padding-left: 27px;
+    font-size: 18px; }
   .requisitos-main section .link-inscripcion a {
     text-decoration: none;
     color: white;
     background-color: black;
     border-radius: 5px;
     padding: 5px;
-    margin-left: 150px; }
+    margin-left: 144px; }
     .requisitos-main section .link-inscripcion a:hover {
       background-color: white;
       color: black;
@@ -406,3 +426,174 @@ footer img {
 
 footer .letra {
   font-family: 'Amatic SC', cursive; }
+
+/*----------------MEDIA QUERIES-----------------*/
+/*RESPONSIVE max-width*/
+/*header--index*/
+@media screen and (max-width: 865px) {
+  .index-header {
+    flex-direction: column;
+    padding: 0px;
+    position: relative; } }
+
+@media screen and (max-width: 727px) {
+  .index-header nav ul {
+    flex-direction: column;
+    text-align: center;
+    align-items: center; } }
+
+/*-----headers-----*/
+@media screen and (max-width: 601px) {
+  header nav ul {
+    flex-direction: column;
+    text-align: center;
+    align-items: center; } }
+
+/*index--main*/
+@media screen and (max-width: 805px) {
+  .decano .grid-conteiner {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: "titulo-grid titulo-grid" "articulo-1 articulo-2" "articulo-3 articulo-4" "articulo-5 articulo-5" "publicidad publicidad"; } }
+
+@media screen and (max-width: 563px) {
+  .fondo h2 {
+    padding: 30px; } }
+
+@media screen and (max-width: 521px) {
+  .fondo h2 {
+    padding: 0px; } }
+
+@media screen and (max-width: 461px) {
+  .fondo h2 {
+    font-size: 40px; } }
+
+@media screen and (max-width: 415px) {
+  .fondo h2 {
+    letter-spacing: 3px; }
+  .icon-conteiner div img {
+    width: 70px;
+    height: 70px; } }
+
+/* page--requisitos--main*/
+@media screen and (max-width: 643px) {
+  .documentacion h3 {
+    padding-left: 0px; } }
+
+@media screen and (max-width: 643px) {
+  .documentacion ol {
+    padding-left: 0px; } }
+
+@media screen and (max-width: 433px) {
+  .video iframe {
+    width: 300px;
+    height: 300px; }
+  .link-inscripcion a {
+    margin-left: 120px; } }
+
+@media screen and (max-width: 340px) {
+  .video iframe {
+    width: 230px;
+    height: 200px; }
+  .link-inscripcion a {
+    margin-left: 70px; } }
+
+/*page--acerca--de--nosotros--main*/
+@media screen and (max-width: 739px) {
+  .galeria-historia {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    grid-template-areas: "galeria" "historia"; } }
+
+.historia {
+  padding-bottom: 40px; }
+
+@media screen and (max-width: 739px) {
+  .galeria {
+    padding-right: 10px; } }
+
+@media screen and (max-width: 650px) {
+  .galeria {
+    padding-right: 10px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px;
+    gap: 12px;
+    grid-template-areas: "img6 img2" "img4 img2" "img1 img1" "img5 img3"; } }
+
+@media screen and (max-width: 570px) {
+  .galeria {
+    padding: 70px;
+    /*!centrar las imagenes y achicarlas*/
+    /*nose porque no se quedan en el medio, hay que hacer imagen 1 por 1?*/
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px;
+    gap: 8px;
+    grid-template-areas: "img6" "img2" "img4" "img1" "img5" "img3"; } }
+
+/*page--contacto--main*/
+@media screen and (max-width: 930px) {
+  .imagen-contacto img {
+    display: none; }
+  .iframe-p p {
+    font-size: 30px;
+    font-weight: 500; }
+  .encuesta-e-imagen .p1 {
+    font-size: 30px;
+    font-weight: 500; } }
+
+@media screen and (max-width: 873px) {
+  .encuesta-e-imagen {
+    flex-direction: column;
+    padding-bottom: 80px; }
+  .encuesta-e-imagen .p1 {
+    padding-top: 0px; }
+  .encuesta-e-imagen form {
+    padding-right: 80px; }
+  .iframe-p {
+    flex-direction: column; }
+  .iframe-p p {
+    padding-right: 80px; }
+  section .iframe-p iframe {
+    padding: 50px 150px 100px 150px;
+    justify-content: center; } }
+
+@media screen and (max-width: 755px) {
+  section .iframe-p iframe {
+    width: 550px;
+    height: 460px; } }
+
+@media screen and (max-width: 615px) {
+  .iframe-p p {
+    font-size: 15px;
+    font-weight: 400; }
+  .encuesta-e-imagen .p1 {
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 110px; }
+  section .iframe-p iframe {
+    width: 450px;
+    height: 350px;
+    padding: 0px;
+    padding-left: 130px;
+    padding-bottom: 30px; } }
+
+@media screen and (max-width: 580px) {
+  section .iframe-p iframe {
+    width: 450px;
+    height: 350px;
+    padding: 0px;
+    padding-left: 80px;
+    padding-bottom: 30px; } }
+
+@media screen and (max-width: 580px) {
+  section .iframe-p iframe {
+    width: 350px;
+    height: 200px;
+    padding: 0px;
+    padding-left: 10px;
+    padding-bottom: 30px; } }

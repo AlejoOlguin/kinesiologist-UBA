@@ -564,7 +564,7 @@ footer .letra{
 
 
 /*header--index*/
-
+/*
 
 @media screen and (max-width:865px){
     .index-header {
@@ -586,7 +586,7 @@ footer .letra{
 
 
 /*-----headers-----*/
-
+/*
 
 @media screen and (max-width:601px){
     header nav ul{
@@ -600,6 +600,9 @@ footer .letra{
 
 
 /*index--main*/
+
+
+/*
 
 @media screen and (max-width: 805px){
     .decano .grid-conteiner{
@@ -649,7 +652,7 @@ footer .letra{
 /* page--requisitos--main*/
 
 
-
+/*
 
 @media screen and (max-width: 643px){
     .documentacion h3{
@@ -684,6 +687,9 @@ footer .letra{
 }
 
 /*page--acerca--de--nosotros--main*/
+
+
+/*
 
 @media screen and (max-width: 739px){
     .galeria-historia{
@@ -725,7 +731,7 @@ footer .letra{
 
 @media screen and (max-width: 570px){
     .galeria{
-        padding: 70px; /*!centrar las imagenes y achicarlas*/  /*nose porque no se quedan en el medio, hay que hacer imagen 1 por 1?*/
+        padding: 70px; /*!centrar las imagenes y achicarlas*/  /*nose porque no se quedan en el medio, hay que hacer imagen 1 por 1?*//*
         width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 250px;
@@ -743,7 +749,7 @@ footer .letra{
 
 /*page--contacto--main*/
 
-
+/*
 @media screen and (max-width: 930px){
     .imagen-contacto img{
         display: none;
