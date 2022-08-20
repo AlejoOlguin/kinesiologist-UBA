@@ -3,266 +3,272 @@
 /*RESPONSIVE max-width*/
 
 
-/*header--index*/
+
+/*--------------HEADER-DE-INDEX---------------*/
 
 
-@media screen and (max-width:865px){
+@media screen and (max-width:835px){
     .index-header {
         flex-direction: column;
         padding: 0px;
         position: relative;
     }
-}
-
-@media screen and (max-width:727px){
-    .index-header nav ul{
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
+    /*------------INDEX-MAIN----------------*/
+    
+    /*------------DECANO-SECTION-CON-GRID--------------*/
+    .index-main{
+        .decano{
+            .grid-conteiner{
+                padding:30px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 200px 200px;
+                grid-template-areas: 
+                "titulo-grid titulo-grid"
+                "articulo-1 articulo-2"
+                "articulo-3 articulo-4"
+                "articulo-5 articulo-5"
+                "publicidad publicidad";
+            }
+        }
     }
 }
 
+@media screen and (max-width:540px){
 
-
-
-/*-----headers-----*/
-
-
-@media screen and (max-width:601px){
-    header nav ul{
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
+    /*------------FONDO-SECTION-----------*/
+    .index-main{
+        .fondo{
+            div{
+                h1{
+                    line-height: 80px;
+                    padding-top: 50px;
+                }
+            }
+            h2{
+                padding: 0px;
+                font-size: 40px;
+            }
+        }
     }
 }
 
-
-
-
-/*index--main*/
-
-@media screen and (max-width: 805px){
-    .decano .grid-conteiner{
-        padding:30px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 200px 200px;
-        grid-template-areas: 
-        "titulo-grid titulo-grid"
-        "articulo-1 articulo-2"
-        "articulo-3 articulo-4"
-        "articulo-5 articulo-5"
-        "publicidad publicidad";
-    }
-}
-
-@media screen and (max-width: 563px){
-    .fondo h2{
-        padding: 30px;
-    }
-}
-
-@media screen and (max-width: 521px){
-    .fondo h2{
-        padding: 0px;
-    }
-}
-
-@media screen and (max-width: 461px){
-    .fondo h2{
-        font-size: 40px;
-    }
-}
-
-@media screen and (max-width: 415px){
-    .fondo h2{
-        letter-spacing: 3px;
-    }
-    .icon-conteiner div img{
-        width: 70px;
-        height: 70px;
-    }
-}
-
-
-
-/* page--requisitos--main*/
-
-
-
-
-@media screen and (max-width: 643px){
-    .documentacion h3{
-        padding-left: 0px;
-    }
-}
-
-@media screen and (max-width: 643px){
-    .documentacion ol{
-        padding-left: 0px;
-    }
-}
-
-@media screen and (max-width:433px){
-    .video iframe{
-        width: 300px;
-        height: 300px;
-    }
-    .link-inscripcion a{
-        margin-left: 120px;
-    }
-}
-
-@media screen and (max-width:340px){
-    .video iframe{
-        width: 230px;
-        height: 200px;
-    }
-    .link-inscripcion a{
-        margin-left: 70px;
-    }
-}
-
-/*page--acerca--de--nosotros--main*/
-
-@media screen and (max-width: 739px){
-    .galeria-historia{
-        display: grid; 
-        grid-template-columns: 1fr;
-        gap: 40px;
-        grid-template-areas:
-        "galeria"
-        "historia"
-    ;
-    }
-}
-.historia{
-    padding-bottom: 40px;
-}
-
-@media screen and (max-width: 739px){
-    .galeria{
-        padding-right: 10px;
-    }
-}
-
-@media screen and (max-width: 650px){
-    .galeria{
-        padding-right: 10px;
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 150px;
-        gap: 12px;
-        grid-template-areas: 
-        "img6 img2"
-        "img4 img2"
-        "img1 img1"
-        "img5 img3"
-        ;
+@media screen and (max-width:380px){
+    
+    /*------------DECANO-SECTION-CON-GRID--------------*/
+    .index-main{
+        .decano{
+            .grid-conteiner{
+                .articulo-1{
+                    padding-bottom: 15px;
+                }
+                .articulo-3{
+                    padding-top: 25px;
+                }
+                .articulo-2{
+                    padding-bottom: 15px;
+                }
+                .articulo-4{
+                    padding-top: 25px;
+                }
+                .publicidad{
+                    div{
+                        .icon-conteiner{
+                            div{
+                                img{
+                                    width: 70px;
+                                    height: 70px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 
-@media screen and (max-width: 570px){
-    .galeria{
-        padding: 70px; /*!centrar las imagenes y achicarlas*/  /*nose porque no se quedan en el medio, hay que hacer imagen 1 por 1?*/
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 250px;
-        gap: 8px;
-        grid-template-areas: 
-        "img6"
-        "img2"
-        "img4"
-        "img1"
-        "img5"
-        "img3"
-        ;
+/*-----------------HEADER-DE-PAGES------------------*/
+
+
+
+
+@media screen and (max-width:755px){
+    header{
+        nav{
+            ul{
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+        }
     }
 }
 
-/*page--contacto--main*/
+
+
+/*-----------------MAIN-REQUISITOS------------------*/
+
+@media screen and (max-width: 750px){
+
+    /*--------------------REQUISITOS-Y-DOCUMENTACION-SECTION--------------------*/
+    .requisitos-main{
+        section{
+            .documentacion{
+                h3{
+                    padding-left: 2px;
+                }
+                ol{
+                    padding-left: 2px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:440px){
+
+    /*--------------------VIDEO Y LINK PARA INSCRIPCION SECTION--------------------*/
+    .requisitos-main{
+        section{
+            .video{
+                iframe{
+                    width: 230px;
+                    height: 200px;
+                }
+            }
+            .link-inscripcion{
+                h4{
+                    padding-left: 2px;
+                }
+                a{
+                    margin-left: 70px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*--------------------GALERIA-HISTORIA-SECTION--------------------*/
+
+@media screen and (max-width: 540px){
+
+    /*--------------------GALERIA-HISTORIA-SECTION--------------------*/
+    .acerca-de-nosotros-main{
+        .galeria-historia{
+            display: grid; 
+            grid-template-columns: 1fr;
+            gap: 40px;
+            grid-template-areas:
+            "galeria"
+            "historia"
+        }
+    }
+}
+
+
+
+/*--------------------MAIN-CONTACTO--------------------*/
 
 
 @media screen and (max-width: 930px){
-    .imagen-contacto img{
-        display: none;
-    }
-    .iframe-p p{
-        font-size: 30px;
-        font-weight: 500;
-    }
-    .encuesta-e-imagen .p1{
-        font-size: 30px;
-        font-weight: 500;
-    }
-}
 
-@media screen and (max-width: 873px){
-    .encuesta-e-imagen{
-        flex-direction: column;
-        padding-bottom: 80px;
-    }
-    .encuesta-e-imagen .p1{
-        padding-top: 0px;
-    }
-    .encuesta-e-imagen form{
-        padding-right: 80px
-    }
-    .iframe-p{
-        flex-direction: column;
-    }
-    .iframe-p p{
-        padding-right: 80px;
-    }
-    section .iframe-p iframe{
-        padding: 50px 150px 100px 150px;
-        justify-content: center;
+    /*--------------------ENCUESTA-E-IMAGEN-SECTION--------------------*/
+    .fondo-contacto{
+        section{
+            .encuesta-e-imagen{
+                flex-direction: column;
+                padding-bottom: 80px;
+                .p1{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-top: 0px;
+                }
+                form{
+                    padding-right: 80px;
+                }
+                .imagen-contacto{
+                    img{
+                        display: none;
+                    }
+                }
+            }
+        }
+        /*--------------------IFRAME-P-SECTION--------------------*/
+        section{
+            .iframe-p{
+                flex-direction: column;
+                p{
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding-right: 80px;
+                }
+                iframe{
+                    padding: 50px 150px 100px 150px;
+                    justify-content: center;
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 755px){
-    section .iframe-p iframe{
-        width: 550px;
-        height: 460px;
-    }
-}
 
-@media screen and (max-width: 615px){
-    .iframe-p p{
-        font-size: 15px;
-        font-weight: 400;
-    }
-    .encuesta-e-imagen .p1{
-        font-size: 15px;
-        font-weight: 400;
-        padding-left: 110px;
-    }
-    section .iframe-p iframe{
-        width: 450px;
-        height: 350px;
-        padding: 0px;
-        padding-left: 130px;
-        padding-bottom: 30px;
-    }
-}
-
-@media screen and (max-width: 580px){
-    section .iframe-p iframe{
-        width: 450px;
-        height: 350px;
-        padding: 0px;
-        padding-left: 80px;
-        padding-bottom: 30px;
+    /*--------------------ENCUESTA-E-IMAGEN-SECTION--------------------*/
+    .fondo-contacto{
+        section{
+            .encuesta-e-imagen{
+                .p1{
+                    font-size: 20px;
+                    font-weight: 600;
+                    padding-left: 110px;
+                }
+            }
+        }
+        /*--------------------IFRAME-P-SECTION--------------------*/
+        section{
+            .iframe-p{
+                p{
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+                iframe{
+                    width: 450px;
+                    height: 350px;
+                    padding: 0px;
+                    padding-left: 130px;
+                    padding-bottom: 30px;
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 580px){
-    section .iframe-p iframe{
-        width: 350px;
-        height: 200px;
-        padding: 0px;
-        padding-left: 10px;
-        padding-bottom: 30px;
+    
+    /*--------------------ENCUESTA-E-IMAGEN-SECTION--------------------*/
+    .fondo-contacto{
+        section{
+            .encuesta-e-imagen{
+                .p1{
+                    padding-left: 4px;
+                }
+            }
+        }
+        /*--------------------IFRAME-P-SECTION--------------------*/
+        section{
+            .iframe-p{
+                iframe{
+                    width: 350px;
+                    height: 200px;
+                    padding: 0px;
+                    padding-left: 10px;
+                    padding-bottom: 30px;
+                }
+            }
+        }
     }
 }

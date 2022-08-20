@@ -73,6 +73,8 @@ header {
       letter-spacing: 15px;
       transition-duration: 2s;
       transition-timing-function: ease-out; }
+  .index-main .fondo p {
+    padding-top: 50px; }
 
 .index-main section h1 {
   color: black;
@@ -106,7 +108,10 @@ header {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 200px 200px 200px;
   gap: 15px 45px;
-  grid-template-areas: "titulo-grid titulo-grid publicidad" "articulo-1 articulo-2 publicidad" "articulo-3 articulo-4 publicidad" "articulo-5 articulo-5 publicidad"; }
+  grid-template-areas: "titulo-grid titulo-grid publicidad"
+ "articulo-1 articulo-2 publicidad"
+ "articulo-3 articulo-4 publicidad"
+ "articulo-5 articulo-5 publicidad"; }
   .index-main .decano .grid-conteiner .titulo-grid {
     grid-area: titulo-grid;
     display: flex;
@@ -344,7 +349,9 @@ main section .materias {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 250px;
     gap: 15px;
-    grid-template-areas: "img6 img6 img2" "img4 img1 img2" "img5 img5 img3"; }
+    grid-template-areas: "img6 img6 img2"
+ "img4 img1 img2"
+ "img5 img5 img3"; }
     .acerca-de-nosotros-main .galeria-historia .galeria .img1 {
       grid-area: img1; }
     .acerca-de-nosotros-main .galeria-historia .galeria .img2 {
@@ -429,171 +436,133 @@ footer .letra {
 
 /*----------------MEDIA QUERIES-----------------*/
 /*RESPONSIVE max-width*/
-/*header--index*/
-@media screen and (max-width: 865px) {
+/*--------------HEADER-DE-INDEX---------------*/
+@media screen and (max-width: 835px) {
   .index-header {
     flex-direction: column;
     padding: 0px;
-    position: relative; } }
+    position: relative; }
+  /*------------INDEX-MAIN----------------*/
+  /*------------DECANO-SECTION-CON-GRID--------------*/
+  .index-main .decano .grid-conteiner {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: "titulo-grid titulo-grid"
+ "articulo-1 articulo-2"
+ "articulo-3 articulo-4"
+ "articulo-5 articulo-5"
+ "publicidad publicidad"; } }
 
-@media screen and (max-width: 727px) {
-  .index-header nav ul {
-    flex-direction: column;
-    text-align: center;
-    align-items: center; } }
+@media screen and (max-width: 540px) {
+  /*------------FONDO-SECTION-----------*/
+  .index-main .fondo div h1 {
+    line-height: 80px;
+    padding-top: 50px; }
+  .index-main .fondo h2 {
+    padding: 0px;
+    font-size: 40px; } }
 
-/*-----headers-----*/
-@media screen and (max-width: 601px) {
+@media screen and (max-width: 380px) {
+  /*------------DECANO-SECTION-CON-GRID--------------*/
+  .index-main .decano .grid-conteiner .articulo-1 {
+    padding-bottom: 15px; }
+  .index-main .decano .grid-conteiner .articulo-3 {
+    padding-top: 25px; }
+  .index-main .decano .grid-conteiner .articulo-2 {
+    padding-bottom: 15px; }
+  .index-main .decano .grid-conteiner .articulo-4 {
+    padding-top: 25px; }
+  .index-main .decano .grid-conteiner .publicidad div .icon-conteiner div img {
+    width: 70px;
+    height: 70px; } }
+
+/*-----------------HEADER-DE-PAGES------------------*/
+@media screen and (max-width: 755px) {
   header nav ul {
     flex-direction: column;
     text-align: center;
     align-items: center; } }
 
-/*index--main*/
-@media screen and (max-width: 805px) {
-  .decano .grid-conteiner {
-    padding: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px;
-    grid-template-areas: "titulo-grid titulo-grid" "articulo-1 articulo-2" "articulo-3 articulo-4" "articulo-5 articulo-5" "publicidad publicidad"; } }
+/*-----------------MAIN-REQUISITOS------------------*/
+@media screen and (max-width: 750px) {
+  /*--------------------REQUISITOS-Y-DOCUMENTACION-SECTION--------------------*/
+  .requisitos-main section .documentacion h3 {
+    padding-left: 2px; }
+  .requisitos-main section .documentacion ol {
+    padding-left: 2px; } }
 
-@media screen and (max-width: 563px) {
-  .fondo h2 {
-    padding: 30px; } }
-
-@media screen and (max-width: 521px) {
-  .fondo h2 {
-    padding: 0px; } }
-
-@media screen and (max-width: 461px) {
-  .fondo h2 {
-    font-size: 40px; } }
-
-@media screen and (max-width: 415px) {
-  .fondo h2 {
-    letter-spacing: 3px; }
-  .icon-conteiner div img {
-    width: 70px;
-    height: 70px; } }
-
-/* page--requisitos--main*/
-@media screen and (max-width: 643px) {
-  .documentacion h3 {
-    padding-left: 0px; } }
-
-@media screen and (max-width: 643px) {
-  .documentacion ol {
-    padding-left: 0px; } }
-
-@media screen and (max-width: 433px) {
-  .video iframe {
-    width: 300px;
-    height: 300px; }
-  .link-inscripcion a {
-    margin-left: 120px; } }
-
-@media screen and (max-width: 340px) {
-  .video iframe {
+@media screen and (max-width: 440px) {
+  /*--------------------VIDEO Y LINK PARA INSCRIPCION SECTION--------------------*/
+  .requisitos-main section .video iframe {
     width: 230px;
     height: 200px; }
-  .link-inscripcion a {
+  .requisitos-main section .link-inscripcion h4 {
+    padding-left: 2px; }
+  .requisitos-main section .link-inscripcion a {
     margin-left: 70px; } }
 
-/*page--acerca--de--nosotros--main*/
-@media screen and (max-width: 739px) {
-  .galeria-historia {
+/*--------------------GALERIA-HISTORIA-SECTION--------------------*/
+@media screen and (max-width: 540px) {
+  /*--------------------GALERIA-HISTORIA-SECTION--------------------*/
+  .acerca-de-nosotros-main .galeria-historia {
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
-    grid-template-areas: "galeria" "historia"; } }
+    grid-template-areas: "galeria"
+ "historia"; } }
 
-.historia {
-  padding-bottom: 40px; }
-
-@media screen and (max-width: 739px) {
-  .galeria {
-    padding-right: 10px; } }
-
-@media screen and (max-width: 650px) {
-  .galeria {
-    padding-right: 10px;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px;
-    gap: 12px;
-    grid-template-areas: "img6 img2" "img4 img2" "img1 img1" "img5 img3"; } }
-
-@media screen and (max-width: 570px) {
-  .galeria {
-    padding: 70px;
-    /*!centrar las imagenes y achicarlas*/
-    /*nose porque no se quedan en el medio, hay que hacer imagen 1 por 1?*/
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 250px;
-    gap: 8px;
-    grid-template-areas: "img6" "img2" "img4" "img1" "img5" "img3"; } }
-
-/*page--contacto--main*/
+/*--------------------MAIN-CONTACTO--------------------*/
 @media screen and (max-width: 930px) {
-  .imagen-contacto img {
-    display: none; }
-  .iframe-p p {
-    font-size: 30px;
-    font-weight: 500; }
-  .encuesta-e-imagen .p1 {
-    font-size: 30px;
-    font-weight: 500; } }
-
-@media screen and (max-width: 873px) {
-  .encuesta-e-imagen {
-    flex-direction: column;
-    padding-bottom: 80px; }
-  .encuesta-e-imagen .p1 {
-    padding-top: 0px; }
-  .encuesta-e-imagen form {
-    padding-right: 80px; }
-  .iframe-p {
-    flex-direction: column; }
-  .iframe-p p {
-    padding-right: 80px; }
-  section .iframe-p iframe {
-    padding: 50px 150px 100px 150px;
-    justify-content: center; } }
+  /*--------------------ENCUESTA-E-IMAGEN-SECTION--------------------*/
+    /*--------------------IFRAME-P-SECTION--------------------*/ 
+    .fondo-contacto section .encuesta-e-imagen {
+      flex-direction: column;
+      padding-bottom: 80px; }
+      .fondo-contacto section .encuesta-e-imagen .p1 {
+        font-size: 30px;
+        font-weight: 600;
+        padding-top: 0px; }
+      .fondo-contacto section .encuesta-e-imagen form {
+        padding-right: 80px; }
+      .fondo-contacto section .encuesta-e-imagen .imagen-contacto img {
+        display: none; }
+    .fondo-contacto section .iframe-p {
+      flex-direction: column; }
+      .fondo-contacto section .iframe-p p {
+        font-size: 30px;
+        font-weight: 600;
+        padding-right: 80px; }
+      .fondo-contacto section .iframe-p iframe {
+        padding: 50px 150px 100px 150px;
+        justify-content: center; } }
 
 @media screen and (max-width: 755px) {
-  section .iframe-p iframe {
-    width: 550px;
-    height: 460px; } }
-
-@media screen and (max-width: 615px) {
-  .iframe-p p {
-    font-size: 15px;
-    font-weight: 400; }
-  .encuesta-e-imagen .p1 {
-    font-size: 15px;
-    font-weight: 400;
-    padding-left: 110px; }
-  section .iframe-p iframe {
-    width: 450px;
-    height: 350px;
-    padding: 0px;
-    padding-left: 130px;
-    padding-bottom: 30px; } }
+  /*--------------------ENCUESTA-E-IMAGEN-SECTION--------------------*/
+    /*--------------------IFRAME-P-SECTION--------------------*/ 
+    .fondo-contacto section .encuesta-e-imagen .p1 {
+      font-size: 20px;
+      font-weight: 600;
+      padding-left: 110px; }
+    .fondo-contacto section .iframe-p p {
+      font-size: 15px;
+      font-weight: 600; }
+    .fondo-contacto section .iframe-p iframe {
+      width: 450px;
+      height: 350px;
+      padding: 0px;
+      padding-left: 130px;
+      padding-bottom: 30px; } }
 
 @media screen and (max-width: 580px) {
-  section .iframe-p iframe {
-    width: 450px;
-    height: 350px;
-    padding: 0px;
-    padding-left: 80px;
-    padding-bottom: 30px; } }
-
-@media screen and (max-width: 580px) {
-  section .iframe-p iframe {
-    width: 350px;
-    height: 200px;
-    padding: 0px;
-    padding-left: 10px;
-    padding-bottom: 30px; } }
+  /*--------------------ENCUESTA-E-IMAGEN-SECTION--------------------*/
+    /*--------------------IFRAME-P-SECTION--------------------*/ 
+    .fondo-contacto section .encuesta-e-imagen .p1 {
+      padding-left: 4px; }
+    .fondo-contacto section .iframe-p iframe {
+      width: 350px;
+      height: 200px;
+      padding: 0px;
+      padding-left: 10px;
+      padding-bottom: 30px; } }

@@ -684,6 +684,9 @@ footer .letra{
     .link-inscripcion a{
         margin-left: 70px;
     }
+    .link-inscripcion h4{
+        padding-left: 2px;
+    }
 }
 
 /*page--acerca--de--nosotros--main*/
@@ -702,6 +705,8 @@ footer .letra{
     ;
     }
 }
+
+
 .historia{
     padding-bottom: 40px;
 }
