@@ -108,10 +108,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 200px 200px 200px;
   gap: 15px 45px;
-  grid-template-areas: "titulo-grid titulo-grid publicidad"
- "articulo-1 articulo-2 publicidad"
- "articulo-3 articulo-4 publicidad"
- "articulo-5 articulo-5 publicidad"; }
+  grid-template-areas: "titulo-grid titulo-grid publicidad" "articulo-1 articulo-2 publicidad" "articulo-3 articulo-4 publicidad" "articulo-5 articulo-5 publicidad"; }
   .index-main .decano .grid-conteiner .titulo-grid {
     grid-area: titulo-grid;
     display: flex;
@@ -349,9 +346,7 @@ main section .materias {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 250px;
     gap: 15px;
-    grid-template-areas: "img6 img6 img2"
- "img4 img1 img2"
- "img5 img5 img3"; }
+    grid-template-areas: "img6 img6 img2" "img4 img1 img2" "img5 img5 img3"; }
     .acerca-de-nosotros-main .galeria-historia .galeria .img1 {
       grid-area: img1; }
     .acerca-de-nosotros-main .galeria-historia .galeria .img2 {
@@ -426,13 +421,28 @@ main section .materias {
 
 footer {
   background-color: darkcyan; }
-
-footer img {
-  width: 35px;
-  height: 35px; }
-
-footer .letra {
-  font-family: 'Amatic SC', cursive; }
+  footer .redes-wpp {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    justify-content: space-between; }
+    footer .redes-wpp div .letra {
+      font-family: 'Amatic SC', cursive;
+      font-size: 30px;
+      padding-left: 5px; }
+    footer .redes-wpp div .redes img {
+      width: 50px;
+      height: 50px;
+      padding: 5px; }
+    footer .redes-wpp .wpp {
+      padding-right: 100px;
+      padding-top: 10px; }
+      footer .redes-wpp .wpp .numeros {
+        display: flex;
+        flex-direction: row; }
+        footer .redes-wpp .wpp .numeros img {
+          width: 35px;
+          height: 35px; }
 
 /*----------------MEDIA QUERIES-----------------*/
 /*RESPONSIVE max-width*/
@@ -449,11 +459,7 @@ footer .letra {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 200px;
-    grid-template-areas: "titulo-grid titulo-grid"
- "articulo-1 articulo-2"
- "articulo-3 articulo-4"
- "articulo-5 articulo-5"
- "publicidad publicidad"; } }
+    grid-template-areas: "titulo-grid titulo-grid" "articulo-1 articulo-2" "articulo-3 articulo-4" "articulo-5 articulo-5" "publicidad publicidad"; } }
 
 @media screen and (max-width: 540px) {
   /*------------FONDO-SECTION-----------*/
@@ -510,13 +516,13 @@ footer .letra {
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
-    grid-template-areas: "galeria"
- "historia"; } }
+    grid-template-areas: "galeria" "historia"; } }
 
 /*--------------------MAIN-CONTACTO--------------------*/
 @media screen and (max-width: 930px) {
   /*--------------------ENCUESTA-E-IMAGEN-SECTION--------------------*/
-    /*--------------------IFRAME-P-SECTION--------------------*/ 
+  .fondo-contacto {
+    /*--------------------IFRAME-P-SECTION--------------------*/ }
     .fondo-contacto section .encuesta-e-imagen {
       flex-direction: column;
       padding-bottom: 80px; }
@@ -540,7 +546,8 @@ footer .letra {
 
 @media screen and (max-width: 755px) {
   /*--------------------ENCUESTA-E-IMAGEN-SECTION--------------------*/
-    /*--------------------IFRAME-P-SECTION--------------------*/ 
+  .fondo-contacto {
+    /*--------------------IFRAME-P-SECTION--------------------*/ }
     .fondo-contacto section .encuesta-e-imagen .p1 {
       font-size: 20px;
       font-weight: 600;
@@ -557,7 +564,8 @@ footer .letra {
 
 @media screen and (max-width: 580px) {
   /*--------------------ENCUESTA-E-IMAGEN-SECTION--------------------*/
-    /*--------------------IFRAME-P-SECTION--------------------*/ 
+  .fondo-contacto {
+    /*--------------------IFRAME-P-SECTION--------------------*/ }
     .fondo-contacto section .encuesta-e-imagen .p1 {
       padding-left: 4px; }
     .fondo-contacto section .iframe-p iframe {
