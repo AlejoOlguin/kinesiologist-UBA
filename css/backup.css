@@ -736,7 +736,7 @@ footer .letra{
 
 @media screen and (max-width: 570px){
     .galeria{
-        padding: 70px; /*!centrar las imagenes y achicarlas*/  /*nose porque no se quedan en el medio, hay que hacer imagen 1 por 1?*//*
+        padding: 70px; 
         width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 250px;
