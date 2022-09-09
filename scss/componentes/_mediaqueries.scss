@@ -272,3 +272,32 @@
         }
     }
 }
+
+@media screen and (max-width: 390px){
+    
+    /*--------------------ENCUESTA-E-IMAGEN-SECTION--------------------*/
+    .fondo-contacto{
+        section{
+            .encuesta-e-imagen{
+                form{
+                    div{
+                        textarea{
+                            width: 250px;
+                            height: 150px;
+                        }
+                    }
+                }
+            }
+        }
+        /*--------------------IFRAME-P-SECTION--------------------*/
+        section{
+            .iframe-p{
+                iframe{
+                    width: 180px;
+                    height: 150px;
+                    padding-left: 50px;
+                }
+            }
+        }
+    }
+}

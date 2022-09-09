@@ -529,8 +529,8 @@ footer {
  "historia"; } }
 
 /*--------------------MAIN-CONTACTO--------------------*/
+@media screen and (max-width: 930px) {
   /*--------------------ENCUESTA-E-IMAGEN-SECTION--------------------*/
-  @media screen and (max-width: 930px) {
     /*--------------------IFRAME-P-SECTION--------------------*/ 
     .fondo-contacto section .encuesta-e-imagen {
       flex-direction: column;
@@ -553,9 +553,8 @@ footer {
         padding: 50px 150px 100px 150px;
         justify-content: center; } }
 
-
+@media screen and (max-width: 755px) {
   /*--------------------ENCUESTA-E-IMAGEN-SECTION--------------------*/
-  @media screen and (max-width: 755px) {
     /*--------------------IFRAME-P-SECTION--------------------*/ 
     .fondo-contacto section .encuesta-e-imagen .p1 {
       font-size: 20px;
@@ -571,9 +570,8 @@ footer {
       padding-left: 130px;
       padding-bottom: 30px; } }
 
-
+@media screen and (max-width: 580px) {
   /*--------------------ENCUESTA-E-IMAGEN-SECTION--------------------*/
-  @media screen and (max-width: 580px) {
     /*--------------------IFRAME-P-SECTION--------------------*/ 
     .fondo-contacto section .encuesta-e-imagen .p1 {
       padding-left: 4px; }
@@ -583,3 +581,14 @@ footer {
       padding: 0px;
       padding-left: 10px;
       padding-bottom: 30px; } }
+
+@media screen and (max-width: 390px) {
+  /*--------------------ENCUESTA-E-IMAGEN-SECTION--------------------*/
+    /*--------------------IFRAME-P-SECTION--------------------*/ 
+    .fondo-contacto section .encuesta-e-imagen form div textarea {
+      width: 250px;
+      height: 150px; }
+    .fondo-contacto section .iframe-p iframe {
+      width: 180px;
+      height: 150px;
+      padding-left: 50px; } }
